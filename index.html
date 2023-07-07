@@ -43,15 +43,22 @@
             </li>
           </ul>
           <!-- form search daerah -->
-          <form class="d-flex" role="search">
+          <div class="d-flex">
             <input
+              id="searchkota"
               class="form-control me-2"
               type="search"
-              placeholder="Ubah Lokasi"
+              placeholder="Ubah Lokasi Kab/Kota"
               aria-label="Cari"
             />
-            <button class="btn btn-outline-light" type="submit">Cari</button>
-          </form>
+            <button
+              class="btn btn-outline-light"
+              type="submit"
+              onclick="getIdKota()"
+            >
+              Cari
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -175,5 +182,6 @@
     <script src="js/clock.js"></script>
     <!-- script js tambahan untuk menarik data dari API (untuk saat ini belum digunakan karena masih static) -->
     <script src="js/script.js"></script>
+    <script src="js/serviceworker.js"></script>
   </body>
 </html>
